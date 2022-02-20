@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Learning Hub (Project-8)
 
-# Project-8 (Learning Hub)
+## Project Brief
+
+Learn Hub is basically an elearning website that allow students to look over all instructors and to book sessions, it allows multiple courses that helps students to improve them, Learn Hub idea came after COVID-19 effect since educational facilities were closed and there are many restrictions on it, so Learn Hub website comes to help students so that the instructor will come to the student home.
+
+## Technologies
+
+- HTML
+- CSS
+- Javascript
+- React.js
+- Bootstrap
+
+## Trello
+
+https://trello.com/b/eJFuE96t/react
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
