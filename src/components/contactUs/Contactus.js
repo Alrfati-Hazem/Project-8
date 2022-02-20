@@ -58,7 +58,7 @@ function ContactUs() {
 
   return (
     <>
-      <div class="container">
+      <div class="container color">
         <div class="content">
           <div class="left-side">
             <div class="address details">

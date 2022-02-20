@@ -138,17 +138,18 @@
 
 .container {
   width: 85%;
-  background: #fff;
-  border-radius: 6px;
   padding: 100px 60px 30px 40px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  min-height: 110vh;
   width: 100%;
-  background: #f0a500;
-
   align-items: center;
   justify-content: center;
   margin: 3rem auto 3rem auto;
+}
+.color {
+  background: #fff;
+  border-radius: 6px;
+  background: #f0a500;
+  min-height: 110vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .container .content {
   display: flex;
