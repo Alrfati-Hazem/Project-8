@@ -1,9 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
-import "./default.css";
-import "./slick.css";
-import "./magnific-popup.css";
 import "./bootstrap.min.css";
 import "./landingpage.css";
 import data from "./Data";
@@ -145,7 +141,7 @@ const Landingpage = () => {
             {data.map((item, id) => (
               <div className="col-lg-4 col-md-7 col-sm-9">
                 <div
-                  className="single-features mt-40"
+                  className="single-features mt-4"
                   style={
                     {
                       // boxShadow: "0px 0px 14px -3px rgba(0,0,0,0.85)",
