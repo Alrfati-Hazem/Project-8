@@ -10,21 +10,27 @@ const Aboutus = () => {
       <div className="aboutus-about-section">
         <h1> About Us</h1>
         <div className="about">
-        <div className="aboutus-img">
-          <img height="300px" src="./e-learning_digital_education-1200x1080.webp" alt="car" />
-        </div>
-        <div className="aboutus-text">
-          <h2>Weekly Guidelines for Students in Asynchronous Online Courses</h2>
-          <p>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum. legentis
-            in iis qui facit eorum claritatem. Investigationes demonstraverunt
-            lectores legere me lius quod ii legunt saepius.
-          </p>
-          <Link to="/listingcars">
-            <button>Discover More</button>
-          </Link>
-        </div>
+          <div className="aboutus-img">
+            <img
+              height="300px"
+              src="./e-learning_digital_education-1200x1080.webp"
+              alt="car"
+            />
+          </div>
+          <div className="aboutus-text">
+            <h2>
+              Weekly Guidelines for Students in Asynchronous Online Courses
+            </h2>
+            <p>
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum.
+              legentis in iis qui facit eorum claritatem. Investigationes
+              demonstraverunt lectores legere me lius quod ii legunt saepius.
+            </p>
+            <Link to="/subjects">
+              <button>Discover More</button>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="ourteam">

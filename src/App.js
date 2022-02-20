@@ -2,9 +2,9 @@ import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import ContactUs from "./components/contactUs/Contactus";
-import Listingcars from "./components/listingCars/Listingcars";
-import BookingForm from "./components/listingCars/BookingForm";
-import carsData from "./components/listingCars/carsData";
+import Subjects from "./components/subjects/Subjects";
+import BookingForm from "./components/subjects/BookingForm";
+import subjectsData from "./components/subjects/subjectsData";
 import Signup from "./components/registration/Signup";
 import Login from "./components/registration/Login";
 import Landingpage from "./components/landingpage/Landingpage";
@@ -20,7 +20,7 @@ function App() {
     localStorage.getItem("logged_user")
   );
 
-  const [cars_Data, setData] = useState(carsData);
+  const [subjects_Data, setData] = useState(subjectsData);
 
   const [disabledItem, setDisabledItem] = useState(
     JSON.parse(localStorage.getItem("reservations"))
@@ -67,9 +67,12 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/aboutus" element={<Aboutus />} />
             <Route
-              path="/listingcars"
+              path="/subjects"
               element={
-                <Listingcars disabledItem={disabledItem} cars={cars_Data} />
+                <Subjects
+                  disabledItem={disabledItem}
+                  subjects={subjects_Data}
+                />
               }
             />
             <Route
@@ -77,7 +80,7 @@ function App() {
               element={
                 <BookingForm
                   setDisabledItem={setDisabledItem}
-                  cars={cars_Data}
+                  subjects={subjects_Data}
                 />
               }
             />

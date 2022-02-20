@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
-import CarItem from "./CarItem";
-import "./ListingCars.css";
+import SubjectCard from "./SubjectCard";
+import "./Subjects.css";
 
-function Listingcars(props) {
+function Subjects(props) {
   const [search, setSearch] = useState(null);
-  const [data, setData] = useState(props.cars);
+  const [data, setData] = useState(props.subjects);
   const [sortValue, setSortValue] = useState("");
 
   const [ids, setIds] = useState([]);
@@ -49,17 +49,25 @@ function Listingcars(props) {
 
   const mapping = () => {
     let isEmpty = true;
-    let arr = data.map((car) => {
-      if (car.title.toLowerCase().includes(search.toLowerCase())) {
+    let arr = data.map((subject) => {
+      if (subject.title.toLowerCase().includes(search.toLowerCase())) {
         if (isEmpty === true) {
           isEmpty = false;
         }
         for (let i = 0; i < ids.length; i++) {
-          if (+ids[i] == car.id) {
-            return <CarItem blocked={"yes"} carsData={car} key={car.id} />;
+          if (+ids[i] == subject.id) {
+            return (
+              <SubjectCard
+                blocked={"yes"}
+                subjectsData={subject}
+                key={subject.id}
+              />
+            );
           }
         }
-        return <CarItem blocked={"no"} carsData={car} key={car.id} />;
+        return (
+          <SubjectCard blocked={"no"} subjectsData={subject} key={subject.id} />
+        );
       } else {
         return "";
       }
@@ -75,13 +83,13 @@ function Listingcars(props) {
   };
 
   return (
-    <div className="Car-list-container">
+    <div className="subject-list-container">
       <div className="background">
         <div className="overlay">
           <h1> Book Your Subject </h1>
         </div>
       </div>
-      <div className="cars pb-5">
+      <div className="subjects pb-5">
         <div className="search-sort p-5 container">
           <input
             type="text"
@@ -100,15 +108,25 @@ function Listingcars(props) {
         </div>
         <div>
           {search == null
-            ? data.map((car) => {
+            ? data.map((subject) => {
                 for (let i = 0; i < ids.length; i++) {
-                  if (+ids[i] == car.id) {
+                  if (+ids[i] == subject.id) {
                     return (
-                      <CarItem blocked={"yes"} carsData={car} key={car.id} />
+                      <SubjectCard
+                        blocked={"yes"}
+                        subjectsData={subject}
+                        key={subject.id}
+                      />
                     );
                   }
                 }
-                return <CarItem blocked={"no"} carsData={car} key={car.id} />;
+                return (
+                  <SubjectCard
+                    blocked={"no"}
+                    subjectsData={subject}
+                    key={subject.id}
+                  />
+                );
               })
             : mapping()}
         </div>
@@ -118,4 +136,4 @@ function Listingcars(props) {
   );
 }
 
-export default Listingcars;
+export default Subjects;

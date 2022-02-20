@@ -8,7 +8,7 @@ const Popup = (props) => {
     resArr.push(props.res);
     localStorage.setItem("reservations", JSON.stringify(resArr));
     props.setDisabledItem(resArr);
-    navigate("/listingcars");
+    navigate("/subjects");
   };
   return (
     <div className="popup-box">

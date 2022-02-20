@@ -8,7 +8,6 @@ import "./bootstrap.min.css";
 import "./landingpage.css";
 import data from "./Data";
 import data2 from "./Data2";
-import Cards from "./Cards";
 import Testimonials from "./Testimonials";
 
 const Landingpage = () => {
@@ -176,7 +175,7 @@ const Landingpage = () => {
                     <h6>{item.ins}</h6>
                     <a
                       className="features-btn"
-                      href="/"
+                      href="/subjects"
                       style={{ color: "rgb(240, 165, 0)" }}
                     >
                       Book Now

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import carsData from "./carsData";
+import subjectsData from "./subjectsData";
 import Popup from "./popup";
 import "./formStyle.css";
 
@@ -20,7 +20,7 @@ function BookingForm(props) {
 
   // To get the subject using Id from params//
   let subject;
-  for (let obj of carsData) {
+  for (let obj of subjectsData) {
     if (obj.id === +id) {
       subject = { ...obj };
     }

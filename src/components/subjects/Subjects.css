@@ -1,10 +1,10 @@
-.Car-list-container .background {
+.subject-list-container .background {
   background-image: url("../../../public/subject.jpg");
   height: 20em;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.Car-list-container .background div {
+.subject-list-container .background div {
   background: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   height: 100%;
@@ -15,18 +15,18 @@
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.Car-list-container .cars {
+.subject-list-container .subjects {
   background-color: #f0f4f5;
   min-height: 270px;
 }
-.Car-list-container .search-sort input,
-.Car-list-container .search-sort select {
+.subject-list-container .search-sort input,
+.subject-list-container .search-sort select {
   padding: 5px 10px !important;
   border: rgb(172, 171, 171) 1px solid;
   color: gray;
   border-radius: 0.3em;
 }
-.Car-list-container .search-sort input::placeholder {
+.subject-list-container .search-sort input::placeholder {
   color: gray;
 }
 .search-sort {

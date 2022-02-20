@@ -1,4 +1,4 @@
-const carsData = [
+const subjectsData = [
   {
     id: 1,
     src: "./arabic.jpg",
@@ -88,4 +88,4 @@ const carsData = [
     max: 15,
   },
 ];
-export default carsData;
+export default subjectsData;
