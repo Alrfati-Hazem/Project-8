@@ -58,140 +58,137 @@ function ContactUs() {
 
   return (
     <>
-      <div className="contactWrapper">
-        <div className="contactDetails">
-          <h3>Don't Hesitate to connect with us</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam,
-          </p>
-          <ul id="contactDetails">
-            <Link to="#" className="fas fa-phone-alt">
-              {" "}
-              +962798452640
-            </Link>
-            <Link
-              to="https://maps.google.com"
-              targrt="_blank"
-              className="fas fa-map-marker-alt"
-            >
-              {" "}
-              Our location
-            </Link>
-            <Link
-              to="https://www.google.com"
-              target="_blank"
-              className="fas fa-envelope"
-            >
-              {" "}
-              Email
-            </Link>
-          </ul>
-        </div>
-        <div className="contactForm">
-          <h2>Contact Us</h2>
-          {!localStorage.getItem("logged_user") && (
-            <p>
-              Kindly fill the below information inorder to call you or{" "}
-              <Link
-                onClick={() => {
-                  sessionStorage.setItem("from", "call");
-                }}
-                to="/Login"
-              >
-                <span id="contSpan">Login</span>
-              </Link>
-            </p>
-          )}
-          <form onSubmit={checkConsults}>
-            <input
-              value={formInfo.fName}
-              onChange={(e) => {
-                handleChange(e, "fName");
-              }}
-              name="fName"
-              className="contactInput"
-              type={"text"}
-              id="firstName"
-              placeholder="  First Name"
-              required
-            ></input>
-            {formInfo.fName.length <= 4 && formInfo.fName.length > 0 ? (
-              <small className="errorMessage1">
-                User name must be more than 4
-              </small>
-            ) : (
-              ""
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Jordan, Amman</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+962795609026</div>
+              <div class="text-two">+962777746310</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">Cars@cars.jo</div>
+              <div class="text-two">mohammad@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any inquiry, dont hesitate to send us a message</p>
+            {!localStorage.getItem("logged_user") && (
+              <p>
+                Kindly fill the below information inorder to call you or{" "}
+                <Link
+                  onClick={() => {
+                    sessionStorage.setItem("from", "call");
+                  }}
+                  to="/Login"
+                >
+                  <span id="contSpan">Login</span>
+                </Link>
+              </p>
             )}
-
-            <input
-              name="lName"
-              value={formInfo.lName}
-              onChange={(e) => {
-                handleChange(e, "lName");
-              }}
-              className="contactInput"
-              type={"text"}
-              id="lastName"
-              placeholder="  Last Name"
-              required
-            ></input>
-            {formInfo.lName.length <= 4 && formInfo.lName.length > 0 ? (
-              <small className="errorMessage1">
-                User name must be more than 4
-              </small>
-            ) : (
-              ""
-            )}
-
-            <input
-              name="email"
-              value={formInfo.email}
-              onChange={handleChange}
-              className="contactInput"
-              type={"email"}
-              id="Email"
-              placeholder="  example@123.com"
-              required
-            ></input>
-
-            <input
-              name="Phone"
-              value={formInfo.Phone}
-              onChange={handleChange}
-              className="contactInput"
-              type={"telephone"}
-              id="Phone"
-              placeholder="Enter your mobile number"
-              required
-            />
-
-            <input
-              name="Date"
-              onChange={(e) => handleDateChange(e)}
-              value={formInfo.Date}
-              className="contactInput"
-              type={"date"}
-              min={valueCut1}
-              value={thisDay}
-              id="Date"
-              placeholder="Date"
-              required
-            />
-
-            <input
-              name="message"
-              value={formInfo.message}
-              onChange={handleChange}
-              className="contactInput"
-              type={"text"}
-              id="message"
-              placeholder="Type your message"
-            ></input>
-
-            <button className="contactSubmit">Submit</button>
-          </form>{" "}
+            <form onSubmit={checkConsults}>
+              <div class="input-box">
+                <input
+                  value={formInfo.fName}
+                  onChange={(e) => {
+                    handleChange(e, "fName");
+                  }}
+                  name="fName"
+                  className="contactInput"
+                  type={"text"}
+                  id="firstName"
+                  placeholder="  First Name"
+                  required
+                ></input>
+                {formInfo.fName.length <= 4 && formInfo.fName.length > 0 ? (
+                  <small className="errorMessage1">
+                    User name must be more than 4
+                  </small>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div class="input-box">
+                <input
+                  name="lName"
+                  value={formInfo.lName}
+                  onChange={(e) => {
+                    handleChange(e, "lName");
+                  }}
+                  className="contactInput"
+                  type={"text"}
+                  id="lastName"
+                  placeholder="  Last Name"
+                  required
+                ></input>
+                {formInfo.lName.length <= 4 && formInfo.lName.length > 0 ? (
+                  <small className="errorMessage1">
+                    User name must be more than 4
+                  </small>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div class="input-box">
+                <input
+                  name="email"
+                  value={formInfo.email}
+                  onChange={handleChange}
+                  className="contactInput"
+                  type={"email"}
+                  id="Email"
+                  placeholder="  example@123.com"
+                  required
+                ></input>
+              </div>
+              <div className="input-box">
+                <input
+                  name="Phone"
+                  value={formInfo.Phone}
+                  onChange={handleChange}
+                  className="contactInput"
+                  type={"telephone"}
+                  id="Phone"
+                  placeholder="Enter your mobile number"
+                  required
+                />
+                <div className="input-box">
+                  <input
+                    name="Date"
+                    onChange={(e) => handleDateChange(e)}
+                    value={formInfo.Date}
+                    className="contactInput"
+                    type={"date"}
+                    min={valueCut1}
+                    value={thisDay}
+                    id="Date"
+                    placeholder="Date"
+                    required
+                  />
+                </div>
+                <div className="input-box message-box">
+                  <input
+                    name="message"
+                    value={formInfo.message}
+                    onChange={handleChange}
+                    type={"text"}
+                    id="message"
+                    placeholder="Type your message"
+                  ></input>
+                </div>
+                <button className="button">Submit</button>
+              </div>
+            </form>{" "}
+          </div>
         </div>
       </div>
       {submitted && <Popup1 />}
