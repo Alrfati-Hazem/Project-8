@@ -7,7 +7,7 @@ function Footer() {
     <div>
       <footer>
         <div className="footer-content">
-          <h3>Learning Hub</h3>
+          <h3>Learn Hub</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -41,7 +41,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-bottom">
-          <p>Copyright &copy; 2022 | Learning Hub</p>
+          <p>Copyright &copy; 2022 | Learn Hub</p>
         </div>
       </footer>
     </div>

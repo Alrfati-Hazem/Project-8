@@ -58,7 +58,7 @@ const Aboutus = () => {
         <img src="./subject/1.png" alt="car" />
       </div>
       <div className="landingpage-about-text">
-        <h3>About Our Academy</h3>
+        <h3>About Us</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

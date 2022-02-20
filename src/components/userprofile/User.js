@@ -195,7 +195,7 @@ function User() {
                       <th scope="row">{i + 1}</th>
                       <td>{ele.title}</td>
                       <td>{ele.ins}</td>
-                      <td>{ele.price}</td>
+                      <td>{ele.price} JD / Season</td>
                       <td>{ele.date}</td>
                     </tr>
                   );

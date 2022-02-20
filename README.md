@@ -1,4 +1,4 @@
-# Learning Hub (Project-8)
+# Learn Hub (Project-8)
 
 ## Project Brief
 
