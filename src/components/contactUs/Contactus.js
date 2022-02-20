@@ -64,19 +64,19 @@ function ContactUs() {
             <div class="address details">
               <i class="fas fa-map-marker-alt"></i>
               <div class="topic">Address</div>
-              <div class="text-one">Jordan, Amman</div>
+              <div class="text-one">Amman, Jordan</div>
             </div>
             <div class="phone details">
               <i class="fas fa-phone-alt"></i>
               <div class="topic">Phone</div>
-              <div class="text-one">+962795609026</div>
-              <div class="text-two">+962777746310</div>
+              <div class="text-one">+962777777777</div>
+              <div class="text-two">+962799999999</div>
             </div>
             <div class="email details">
               <i class="fas fa-envelope"></i>
               <div class="topic">Email</div>
-              <div class="text-one">Cars@cars.jo</div>
-              <div class="text-two">mohammad@gmail.com</div>
+              <div class="text-one">info@learning-hub.com</div>
+              <div class="text-two">support@learning-hub.com</div>
             </div>
           </div>
           <div class="right-side">

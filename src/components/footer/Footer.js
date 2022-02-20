@@ -7,44 +7,41 @@ function Footer() {
     <div>
       <footer>
         <div className="footer-content">
-          <h3>Learn Hub</h3>
+          <h3>Learning Hub</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <ul className="socials">
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-youtube"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-linkedin"></i>
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-bottom">
-          <p>
-            Copyright &copy;2020 codeOpacity. designed by{" "}
-            <span>mohammadkh</span>
-          </p>
+          <p>Copyright &copy; 2022 | Learning Hub</p>
         </div>
       </footer>
     </div>
