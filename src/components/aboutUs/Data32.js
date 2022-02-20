@@ -1,15 +1,15 @@
 const data32 = [
   {
     id: 24,
-    src: "./B8B67386-8B92-455C-AA4F-BE600866F657_(2).jpeg",
-    name: "Saja Abu_Kharma",
-    position: "Full-Stake developer",
+    src: "./images.png",
+    name: "Saja Abu-Kharma",
+    position: "Full-Stack developer",
   },
   {
     id: 25,
-    src: "./1215224.jpg",
+    src: "./images.png",
     name: "Ibrahim Hasan",
-    position: "Full-Stake developer",
+    position: "Full-Stack developer",
   },
 ];
 export default data32;

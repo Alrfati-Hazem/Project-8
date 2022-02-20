@@ -3,10 +3,10 @@ import "./style.css";
 
 function User() {
   var user = JSON.parse(localStorage.getItem("logged_user"));
-  var [{ fname, lname, email, password }, setInput] = useState({
+  var [{ fname, lname, user_email, password }, setInput] = useState({
     fname: user.fName,
     lname: user.lName,
-    email: user.email,
+    user_email: user.email,
     password: user.password,
   });
 
@@ -20,7 +20,7 @@ function User() {
     var users = JSON.parse(localStorage.getItem("users"));
     var user = JSON.parse(localStorage.getItem("logged_user"));
     var userUpdate = {
-      email: email,
+      email: user_email,
       fName: fname,
       lName: lname,
       password: password,
@@ -33,7 +33,7 @@ function User() {
         localStorage.setItem("users", JSON.stringify(users));
         localStorage.setItem("logged_user", JSON.stringify(userUpdate));
         setInput({
-          email: users.email,
+          user_email: users.email,
           fName: users.fName,
           lName: users.lName,
           password: users.password,
@@ -42,6 +42,14 @@ function User() {
     });
   };
   var res = JSON.parse(localStorage.getItem("reservations"));
+  var counter = 0;
+  res
+    .filter((ele) => {
+      return ele.email === user_email;
+    })
+    .map((ele) => {
+      counter++;
+    });
   var email = JSON.parse(localStorage.getItem("logged_user")).email;
   return (
     <section id="services" className="features-area mt-0">
@@ -73,7 +81,7 @@ function User() {
                       style={{ fontSize: "smaller", fontWeight: "bolder" }}
                       className="text-center"
                     >
-                      Number of Lessons Taken: 0
+                      Number of Lessons Taken: {counter}
                       <span style={{ color: "rgb(50, 214, 50)" }}>{}</span>
                     </p>
                   </div>
@@ -117,10 +125,10 @@ function User() {
                       <label for="eMail">Email</label>
                       <input
                         type="email"
-                        name="email"
+                        name="user_email"
                         className="form-control"
                         id="eMail"
-                        value={email}
+                        value={user_email}
                         placeholder="Enter email ID"
                         onChange={inputChange}
                       />
@@ -179,7 +187,7 @@ function User() {
             <tbody>
               {res
                 .filter((ele) => {
-                  return ele.email === email;
+                  return ele.email === user_email;
                 })
                 .map((ele, i) => {
                   return (

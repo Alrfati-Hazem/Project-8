@@ -7,8 +7,6 @@ import "./magnific-popup.css";
 import "./bootstrap.min.css";
 import "./landingpage.css";
 import data from "./Data";
-import data2 from "./Data2";
-import Testimonials from "./Testimonials";
 
 const Landingpage = () => {
   return (
@@ -187,19 +185,6 @@ const Landingpage = () => {
           </div>
         </div>
       </section>
-      <div className="landingpage-Testimonials">
-        <h3>Testimonials</h3>
-        <div className="landingpage-Testimonials-cards">
-          {data2.map((item, id) => (
-            <Testimonials
-              src={item.src}
-              des={item.des}
-              key={id}
-              title={item.title}
-            />
-          ))}
-        </div>
-      </div>
       <div className="landingpage-about">
         <div className="landingpage-about-img">
           <img src="./subject/1.png" alt="car" />
