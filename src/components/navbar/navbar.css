@@ -5,8 +5,8 @@
   background-color: white;
 }
 .logo-nav img {
-  margin: auto 5em;
-  width: 5em;
+  margin: 3emem 1em 3em 5em;
+  width: 10em;
 }
 .burger-menu {
   display: none;
@@ -28,8 +28,8 @@
   font-weight: bold;
 }
 .nav-options ul li a:hover {
-  color: #0aa5cd;
-  border-bottom: solid #0aa5cd;
+  color: #f0a500;
+  border-bottom: solid #f0a500;
   transition: 0.1s;
   transform: scale(1.2);
 }
@@ -67,7 +67,7 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 .login-btn-header:hover {
-  background-color: #0aa5cd;
+  background-color: #f0a500;
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -78,7 +78,7 @@ nav ul li a:hover {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: #192032;
+  background-color: #f0a500;
   cursor: pointer;
 }
 .signup-btn-header:hover {
@@ -92,7 +92,7 @@ nav ul li a:hover {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   border-radius: 20px;
-  background-color: #192032;
+  background-color: #f0a500;
   cursor: pointer;
   outline-style: none;
 }

@@ -9,7 +9,7 @@ function Header({ submitted, setSubmitted, logged, setLogged }) {
     <nav className="navbar">
       <div className="logo-nav">
         <Link to="/">
-          <img src="/car-rent-logo.png" alt="logo" />
+          <img src="/WhatsApp Image 2022-02-19 at 1.26.34 PM.jpeg" alt="logo" />
         </Link>
         <button className="burger-menu" onClick={() => setShowNav(!showNav)}>
           <i className="fas fa-bars"></i>
@@ -27,7 +27,7 @@ function Header({ submitted, setSubmitted, logged, setLogged }) {
           </li>
           <li>
             {" "}
-            <Link to="/listingcars">LISTING CARS</Link>
+            <Link to="/listingcars">BOOKING</Link>
           </li>
           <li>
             {" "}
@@ -52,7 +52,6 @@ function Header({ submitted, setSubmitted, logged, setLogged }) {
                   className="logout-btn-header"
                   onClick={() => {
                     localStorage.removeItem("logged_user");
-                    // localStorage.removeItem("reservation");
                     setLogged(localStorage.getItem("logged_user"));
                     setSubmitted(localStorage.getItem("logged_user"));
                     sessionStorage.removeItem("from");
