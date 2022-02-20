@@ -63,5 +63,13 @@ const data = [
     time: "Sun-Tue-Thu, 10:00 AM - 01:00 PM",
     ins: "Mr.Ibrahim Omar",
   },
+  {
+    id: 9,
+    src: "./subject/statistics.jpg",
+    title: "Statistics",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    time: "Sun-Tue-Thu, 10:00 AM - 01:00 PM",
+    ins: "Mr.Ibrahim Omar",
+  },
 ];
 export default data;

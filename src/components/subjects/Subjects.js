@@ -86,7 +86,7 @@ function Subjects(props) {
     <div className="subject-list-container">
       <div className="background">
         <div className="overlay">
-          <h1> Book Your Subject </h1>
+          <h1 style={{ color: "white" }}> Book Your Subject </h1>
         </div>
       </div>
       <div className="subjects pb-5">

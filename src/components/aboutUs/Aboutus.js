@@ -11,11 +11,7 @@ const Aboutus = () => {
         <h1> About Us</h1>
         <div className="about">
           <div className="aboutus-img">
-            <img
-              height="300px"
-              src="./e-learning_digital_education-1200x1080.webp"
-              alt="car"
-            />
+            <img height="300px" src="./subject/1.png" alt="subject" />
           </div>
           <div className="aboutus-text">
             <h2>

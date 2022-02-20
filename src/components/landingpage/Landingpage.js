@@ -38,7 +38,7 @@ const Landingpage = () => {
                       </p>
                       <ul className="slider-btn rounded-buttons">
                         <li>
-                          <a className="main-btn rounded-one" href="#exams">
+                          <a className="main-btn rounded-one" href="/subjects">
                             GET STARTED
                           </a>
                         </li>
@@ -66,7 +66,7 @@ const Landingpage = () => {
                       </p>
                       <ul className="slider-btn rounded-buttons">
                         <li>
-                          <a className="main-btn rounded-one" href="#exams">
+                          <a className="main-btn rounded-one" href="/subjects">
                             GET STARTED
                           </a>
                         </li>
@@ -93,7 +93,7 @@ const Landingpage = () => {
                       </p>
                       <ul className="slider-btn rounded-buttons">
                         <li>
-                          <a className="main-btn rounded-one" href="#exams">
+                          <a className="main-btn rounded-one" href="/subjects">
                             GET STARTED
                           </a>
                         </li>

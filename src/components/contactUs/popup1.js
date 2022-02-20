@@ -12,7 +12,7 @@ const Popup1 = (props) => {
           possible!
         </h3>
         <button className="finalBtn" onClick={() => navigate("/")}>
-          Back to Shop
+          Back to Home
         </button>
       </div>
     </div>

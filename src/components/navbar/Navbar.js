@@ -47,6 +47,15 @@ function Header({ submitted, setSubmitted, logged, setLogged }) {
           </li>
           <li>
             {logged ? (
+              <Link to="/user">
+                <button className="logout-btn-header">
+                  {JSON.parse(localStorage.getItem("logged_user")).fName}
+                </button>
+              </Link>
+            ) : null}
+          </li>
+          <li>
+            {logged ? (
               <Link to="/login">
                 <button
                   className="logout-btn-header"

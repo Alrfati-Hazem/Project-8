@@ -53,7 +53,7 @@ function BookingForm(props) {
     if (isEmpty) {
       alert("fill in all inputs");
     } else {
-      let { fName, lName, email, tel, date, ins, title } = userInfo;
+      let { fName, lName, email, tel, date, ins, title, price } = userInfo;
       res = {
         id: id,
         ins: ins,
@@ -63,6 +63,7 @@ function BookingForm(props) {
         email: email,
         tel: tel,
         date: date,
+        price: subject.price,
       };
     }
     console.log(res);

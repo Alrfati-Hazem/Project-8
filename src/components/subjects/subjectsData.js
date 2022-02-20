@@ -87,5 +87,16 @@ const subjectsData = [
     price: 80,
     max: 15,
   },
+  {
+    id: 9,
+    src: "./statistics.jpg",
+    title: "Statistics",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    time: "Sun-Tue-Thu, 10:00 AM - 01:00 PM",
+    time2: "Mon-Wed, 12:00 AM - 04:00 PM",
+    ins: "Mr.Ibrahim Omar",
+    price: 80,
+    max: 15,
+  },
 ];
 export default subjectsData;

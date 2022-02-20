@@ -16,7 +16,7 @@ function User() {
     });
   };
 
-  const Update = (event) => {
+  const Update = () => {
     var users = JSON.parse(localStorage.getItem("users"));
     var user = JSON.parse(localStorage.getItem("logged_user"));
     var userUpdate = {
@@ -41,9 +41,11 @@ function User() {
       }
     });
   };
+  var res = JSON.parse(localStorage.getItem("reservations"));
+  var email = JSON.parse(localStorage.getItem("logged_user")).email;
   return (
     <section id="services" className="features-area mt-0">
-      <div className="container">
+      <div className="container user-padding">
         <div className="row gutters">
           <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 mb-4">
             <div className="card h-100">
@@ -80,11 +82,11 @@ function User() {
             </div>
           </div>
           <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 mb-4">
-            <div className="card h-100">
-              <div className="card-body">
+            <div className="card h-100 ">
+              <div className="card-body ">
                 <div className="row gutters">
-                  <h6 className="ml-4 mb-2 text-primary">Personal Details</h6>
-                  <form className="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <h6 className="ml-4 mb-2 text-warning">Personal Details</h6>
+                  <form className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
                     <div className="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
                       <label for="fullName">Name</label>
                       <input
@@ -104,7 +106,7 @@ function User() {
                         type="text"
                         name="lname"
                         className="form-control"
-                        id="fullName"
+                        id="fullName2"
                         value={lname}
                         placeholder="Enter full name"
                         onChange={inputChange}
@@ -151,7 +153,7 @@ function User() {
                       <button
                         id="submit"
                         name="edit_btn"
-                        className="btn btn-primary mt-2 ml-3"
+                        className="btn btn-warning mt-2 ml-3"
                         style={{ display: "block" }}
                         onClick={Update}
                       >
@@ -168,19 +170,28 @@ function User() {
             <thead>
               <tr className="text-center">
                 <th scope="col">#</th>
-                <th scope="col">Exam</th>
-                <th scope="col">Result/100</th>
-                <th scope="col">Status</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Instructor</th>
+                <th scope="col">Price</th>
                 <th scope="col">Date</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="text-center">
-                <th scope="row">{}</th>
-                <td>{}</td>
-                <td>{}</td>
-                <td>{}</td>
-              </tr>
+              {res
+                .filter((ele) => {
+                  return ele.email === email;
+                })
+                .map((ele, i) => {
+                  return (
+                    <tr className="text-center">
+                      <th scope="row">{i + 1}</th>
+                      <td>{ele.title}</td>
+                      <td>{ele.ins}</td>
+                      <td>{ele.price}</td>
+                      <td>{ele.date}</td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>

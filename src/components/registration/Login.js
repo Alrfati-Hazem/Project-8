@@ -33,7 +33,7 @@ function Login({ setLogged, setSubmitted }) {
             break;
           }
           case "listing": {
-            navigate("/listingcars");
+            navigate("/subjects");
             break;
           }
           default:

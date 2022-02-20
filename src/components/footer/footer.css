@@ -20,6 +20,7 @@ footer {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 3rem;
+  color: white;
 }
 
 .footer-content p {
@@ -27,6 +28,7 @@ footer {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
+  color: white;
 }
 .socials {
   list-style: none;
@@ -64,6 +66,7 @@ footer {
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
+  color: white;
 }
 
 .footer-bottom span {
