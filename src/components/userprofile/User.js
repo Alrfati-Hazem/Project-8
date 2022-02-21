@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./user_style.css";
 
 function User() {
   var user = JSON.parse(localStorage.getItem("logged_user"));

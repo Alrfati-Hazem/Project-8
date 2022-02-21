@@ -76,7 +76,7 @@ function BookingForm(props) {
 
   return (
     <>
-      <div className="car-form-container ">
+      <div className="subject-form-container ">
         <h1>Booking</h1>
         <form className="form" onSubmit={(e) => handleFormSubmit(e)}>
           <div className="textsCont">
