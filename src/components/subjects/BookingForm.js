@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import subjectsData from "./subjectsData";
 import Popup from "./popup";
 import "./formStyle.css";
+import SweetAlert from "react-bootstrap-sweetalert";
 
 function BookingForm(props) {
   // Gitting Product Id from the param (URL)
@@ -75,7 +76,7 @@ function BookingForm(props) {
 
   return (
     <>
-      <div className="car-form-container ">
+      <div className="subject-form-container ">
         <h1>Booking</h1>
         <form className="form" onSubmit={(e) => handleFormSubmit(e)}>
           <div className="textsCont">

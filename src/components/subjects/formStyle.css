@@ -1,4 +1,4 @@
-.car-form-container {
+.subject-form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,19 +11,19 @@
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
 }
 
-.car-form-container h1 {
+.subject-form-container h1 {
   margin-bottom: 1em;
 }
 
-.car-form-container form {
+.subject-form-container form {
   display: flex;
   flex-direction: column;
 }
-.car-form-container input[type="text"],
-.car-form-container input[type="email"],
-.car-form-container input[type="tel"],
-.car-form-container input[type="date"],
-.car-form-container input[type="time"] {
+.subject-form-container input[type="text"],
+.subject-form-container input[type="email"],
+.subject-form-container input[type="tel"],
+.subject-form-container input[type="date"],
+.subject-form-container input[type="time"] {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   font-family: inherit;
@@ -31,7 +31,7 @@
   padding: 10px;
   width: 100%;
 }
-.car-form-container input[type="submit"] {
+.subject-form-container input[type="submit"] {
   outline: none !important;
   background-color: #f0a500;
   color: white;
@@ -42,16 +42,16 @@
   cursor: pointer;
   border: 1px solid #f0a500;
 }
-.car-form-container input[type="submit"]:hover {
+.subject-form-container input[type="submit"]:hover {
   background-color: white;
   color: #f0a500;
 }
-.car-form-container .texts {
+.subject-form-container .texts {
   display: flex;
   justify-content: space-around;
 }
 
-.car-form-container .texts > input {
+.subject-form-container .texts > input {
   margin-right: 10px;
   margin-bottom: 10px;
 }

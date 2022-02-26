@@ -14,27 +14,27 @@ function Footer() {
           </p>
           <ul className="socials">
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-youtube"></i>
               </a>
             </li>
             <li>
-              <a href="£">
+              <a href="/">
                 <i className="social fa-brands fa-linkedin"></i>
               </a>
             </li>

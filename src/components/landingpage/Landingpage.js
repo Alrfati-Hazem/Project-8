@@ -1,14 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
-import "./default.css";
-import "./slick.css";
-import "./magnific-popup.css";
 import "./bootstrap.min.css";
 import "./landingpage.css";
 import data from "./Data";
-import data2 from "./Data2";
-import Testimonials from "./Testimonials";
 
 const Landingpage = () => {
   return (
@@ -147,7 +141,7 @@ const Landingpage = () => {
             {data.map((item, id) => (
               <div className="col-lg-4 col-md-7 col-sm-9">
                 <div
-                  className="single-features mt-40"
+                  className="single-features mt-4"
                   style={
                     {
                       // boxShadow: "0px 0px 14px -3px rgba(0,0,0,0.85)",
@@ -187,25 +181,12 @@ const Landingpage = () => {
           </div>
         </div>
       </section>
-      <div className="landingpage-Testimonials">
-        <h3>Testimonials</h3>
-        <div className="landingpage-Testimonials-cards">
-          {data2.map((item, id) => (
-            <Testimonials
-              src={item.src}
-              des={item.des}
-              key={id}
-              title={item.title}
-            />
-          ))}
-        </div>
-      </div>
       <div className="landingpage-about">
         <div className="landingpage-about-img">
           <img src="./subject/1.png" alt="car" />
         </div>
         <div className="landingpage-about-text">
-          <h3>About Our Academy</h3>
+          <h3>About Us</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

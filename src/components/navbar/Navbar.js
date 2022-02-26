@@ -23,11 +23,11 @@ function Header({ submitted, setSubmitted, logged, setLogged }) {
           </li>
           <li>
             {" "}
-            <Link to="/aboutus">ABOUT US</Link>
+            <Link to="/subjects">SUBJECTS</Link>
           </li>
           <li>
             {" "}
-            <Link to="/subjects">BOOKING</Link>
+            <Link to="/aboutus">ABOUT US</Link>
           </li>
           <li>
             {" "}
