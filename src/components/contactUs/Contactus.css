@@ -136,7 +136,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.contact-container {
   width: 85%;
   padding: 100px 60px 30px 40px;
   width: 100%;
@@ -221,9 +221,7 @@
   padding: 0 15px;
   resize: none;
 }
-.right-side .message-box {
-  min-height: 110px;
-}
+
 .right-side .input-box textarea {
   padding-top: 6px;
 }

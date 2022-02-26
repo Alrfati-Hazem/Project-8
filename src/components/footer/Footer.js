@@ -42,8 +42,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <p>
-            Copyright &copy;2020 codeOpacity. designed by{" "}
-            <span>mohammadkh</span>
+            Copyright &copy;2022. designed by <span>Learning-Academy</span>
           </p>
         </div>
       </footer>

@@ -23,6 +23,22 @@
   color: #f0a500 !important;
   padding: 0.5em;
   font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form-input {
+  padding: 22px 13px !important;
+}
+
+.login-form-input:focus {
+  border-color: #f0a500 !important;
 }
 
 .input-group-text {
@@ -31,6 +47,7 @@
 
 .input-group.form-group {
   margin-bottom: 25px;
+  width: 80%;
 }
 
 input.form-control {
@@ -69,6 +86,9 @@ input:focus {
   border-radius: 10px;
   padding: 1em 2em;
   cursor: pointer;
+
+  margin-bottom: 10px;
+
   transition: 0.2s all linear;
 }
 

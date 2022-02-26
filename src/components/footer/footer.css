@@ -71,6 +71,7 @@ footer {
 
 .footer-bottom span {
   text-transform: uppercase;
-  opacity: 0.4;
-  font-weight: 200;
+  opacity: 1;
+  color: #f0a500;
+  font-weight: 500;
 }

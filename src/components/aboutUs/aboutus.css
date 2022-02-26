@@ -7,7 +7,7 @@
   margin-top: 2em;
   margin-bottom: 20px;
 }
-.about{
+.about {
   display: flex;
   justify-content: space-around;
 
@@ -36,7 +36,7 @@
   transition: 0.3s;
 }
 /*////////////////////////////////////////// our team styling  */
-.ourteam{
+.ourteam {
   padding-top: 5px;
   margin-top: 5px;
   display: flex;
@@ -49,11 +49,18 @@
   width: 20em;
   margin-bottom: 1em;
   border-radius: 10px;
+  object-fit: cover;
 }
 .ourteam-listing h3,
-h6 {
+.ourteam-listing h6 {
   text-align: center;
+  color: white;
 }
+
+.ourteam-listing h6 {
+  color: rgb(216, 216, 216) !important;
+}
+
 .ourteam-body {
   color: white;
   display: grid;
@@ -82,7 +89,7 @@ h6 {
 }
 .ourteam-listing {
   margin-right: 10px !important;
- }
+}
 
 @media screen and (max-width: 768px) {
   .ourteam-body {

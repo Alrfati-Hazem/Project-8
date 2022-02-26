@@ -92,7 +92,7 @@ function Signup({ setSubmitted, setLogged }) {
                 id="form"
                 className="register-form"
               >
-                <div className="input-group form-group">
+                <div className="input-group form-group register-box">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
                       <i className="fas fa-user"></i>
@@ -112,7 +112,7 @@ function Signup({ setSubmitted, setLogged }) {
                     <small className="errorMsg">{formErrors.firstName}</small>
                   </div>
                 </div>{" "}
-                <div className="input-group form-group">
+                <div className="input-group form-group register-box">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
                       <i className="fas fa-user"></i>
@@ -132,7 +132,7 @@ function Signup({ setSubmitted, setLogged }) {
                     <small className="errorMsg">{formErrors.lastName}</small>
                   </div>
                 </div>{" "}
-                <div className="input-group form-group">
+                <div className="input-group form-group register-box">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
                       <i className="far fa-envelope"></i>
@@ -152,7 +152,7 @@ function Signup({ setSubmitted, setLogged }) {
                     <small className="errorMsg">{formErrors.email}</small>
                   </div>
                 </div>
-                <div className="input-group form-group">
+                <div className="input-group form-group register-box">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
                       <i className="fas fa-key"></i>
@@ -172,7 +172,7 @@ function Signup({ setSubmitted, setLogged }) {
                     <small className="errorMsg">{formErrors.password}</small>
                   </div>
                 </div>{" "}
-                <div className="input-group form-group">
+                <div className="input-group form-group register-box">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
                       <i className="fas fa-key"></i>

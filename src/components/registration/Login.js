@@ -51,7 +51,7 @@ function Login({ setLogged, setSubmitted }) {
         <div className="card1">
           <div className="card-body">
             <h3>Sign In</h3>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="login-form">
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
@@ -60,7 +60,7 @@ function Login({ setLogged, setSubmitted }) {
                 </div>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control login-form-input"
                   placeholder="Email"
                   name="email"
                   onChange={loginFormValues}
@@ -75,7 +75,7 @@ function Login({ setLogged, setSubmitted }) {
                 </div>
                 <input
                   type="password"
-                  className="form-control"
+                  className="form-control login-form-input"
                   placeholder="Password"
                   name="password"
                   onChange={loginFormValues}

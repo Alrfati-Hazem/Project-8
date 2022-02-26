@@ -58,7 +58,7 @@ function ContactUs() {
 
   return (
     <>
-      <div class="container color">
+      <div class="container contact-container color">
         <div class="content">
           <div class="left-side">
             <div class="address details">
@@ -95,7 +95,7 @@ function ContactUs() {
                 </Link>
               </p>
             )}
-            <form onSubmit={checkConsults}>
+            <form onSubmit={checkConsults} className="register-form">
               <div class="input-box">
                 <input
                   value={formInfo.fName}
@@ -106,7 +106,7 @@ function ContactUs() {
                   className="contactInput"
                   type={"text"}
                   id="firstName"
-                  placeholder="  First Name"
+                  placeholder="First Name"
                   required
                 ></input>
                 {formInfo.fName.length <= 4 && formInfo.fName.length > 0 ? (
@@ -127,7 +127,7 @@ function ContactUs() {
                   className="contactInput"
                   type={"text"}
                   id="lastName"
-                  placeholder="  Last Name"
+                  placeholder="Last Name"
                   required
                 ></input>
                 {formInfo.lName.length <= 4 && formInfo.lName.length > 0 ? (
@@ -146,7 +146,7 @@ function ContactUs() {
                   className="contactInput"
                   type={"email"}
                   id="Email"
-                  placeholder="  example@123.com"
+                  placeholder="Enter your email"
                   required
                 ></input>
               </div>
@@ -177,6 +177,7 @@ function ContactUs() {
                 </div>
                 <div className="input-box message-box">
                   <input
+                    className="input-message"
                     name="message"
                     value={formInfo.message}
                     onChange={handleChange}
